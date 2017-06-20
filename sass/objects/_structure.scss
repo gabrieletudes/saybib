@@ -1,0 +1,19 @@
+/*
+ * /sass/objects/_structure.scss - Structure elements
+ * by Gabriel
+ */
+/*structure du site*/
+main {
+    width: $mainSize;
+    margin: ( $mainSize / 4 ) auto 0;
+}
+
+.main {
+   /* display: flex;
+    flex-direction: column;*/
+}
+
+.nav > ul {
+    /*align-items: center;
+    display: flex;*/
+}

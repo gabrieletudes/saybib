@@ -1,0 +1,339 @@
+/* sass-intro
+ *
+ * /sass/styles.scss - Main stylesheet
+ * by Gabriel
+ */
+
+/* Settings*/
+/*@import "settings/colors";
+@import "settings/fonts";
+@import "settings/size";
+
+// Tools
+// --- nothing here (yet)
+
+// Generic
+@import "generic/reset";
+
+// Base
+@import "base/elements";
+
+// Objects
+@import "objects/structure";
+
+// Components
+@import "components/header";
+@import "components/stuffs";
+@import "components/footer";*/
+
+/* Trumps*/
+/* --- nothing here (yet)*/
+
+/* Generic*/
+@import "generic/reset";
+
+/*main*/
+.main {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.875em auto 0;
+    max-width: 1024px;
+    align-items: flex-start;
+}
+
+/*wrapper*/
+
+.wrapper {
+  background-color: white;
+  font-family: Roboto, "Helvetica Neue", "Helvetica", sans-serif;
+}
+
+/*nav*/
+.nav {
+    background: #159588 none repeat scroll 0 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    max-width: 1024px;
+    margin: 0 auto;
+&__logo {
+    /*display: inline-block;*/
+    /*margin-left: 20px;*/
+    /*margin-top: 5px;*/
+  }
+&__logo > img {
+    width: 50px;
+  }
+
+  & > ul {
+    /*display: inline-block;*/
+    /*float: right;*/
+    /*margin-right: 30px;*/
+    /*margin-top: 15px;*/
+    /*text-align: center;*/
+  }
+
+&__link {
+    color: white;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-right: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 0;
+
+&:hover{
+    color: lightcoral;
+    border-bottom: 4px solid lightcoral;
+  }
+}
+}
+/*mainheader*/
+
+.mainheader {
+   /* @media screen and (min-width: 480px) {
+      width: 500px;
+    }*/
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: transparent url("../img/pexels-photo.jpg") no-repeat scroll center bottom / 200% auto;
+    min-height: 24.25em;/* 388px/16px */
+    /*padding: 10px;*/
+
+&__wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    line-height: 1.5;
+    max-width: 26em;
+
+     /* max-width: 26em;/* 416px/16px */
+
+& q {
+    color: white;
+    font-size: 1.25em;
+}
+
+&__authorname {
+        color: white;
+        margin-top: 5px;
+        text-align: right;
+}
+&__link {
+        -webkit-align-self: flex-end;
+            -ms-flex-item-align: end;
+                align-self: flex-end;
+        background-color: teal;
+        color: white;
+        font-size: 0.9em;
+        margin-top: 20px;
+        padding: 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+&:hover{
+        background-color: lightcoral;
+        }
+    }
+ }
+ }
+/*article*/
+.article {
+        background-color: white;
+        border-radius: 5px;
+        border-top: 4px solid teal;
+        box-shadow: 0 0 1px 1px lightgrey;
+        display: flex;
+        flex-direction: column;
+        padding: 1.25em;
+        width: 68.3594%;
+  &__header__date{
+    color: #686868;
+/*    display: block;*/
+/*    margin-bottom: 15px;*/
+/*    text-align: right;*/
+  }
+
+  &__header__label {
+/*    display: inline-block;*/
+/*    padding-bottom: 14px;*/
+/*    padding-right: 10px;*/
+  }
+
+  &__header__link {
+    color: teal;
+  }
+
+  &__bookcover {
+    width: 200px;
+  }
+
+  &__content {
+    line-height: 1.5;
+/*    margin-bottom: 20px;*/
+  }
+
+  &__link {
+    background-color: teal;
+    color: white;
+    font-size: 0.9em;
+    margin-top: 10px;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    align-self: flex-end;
+
+  }
+
+  &__link:hover{
+    background-color: lightcoral;
+  }
+
+
+}
+/*tout les h1*/
+h1 {
+  color: teal;
+  /*margin-bottom: 20px;*/
+}
+
+/*tout les h2*/
+h2 {
+  color: #606060;
+  /*margin-bottom: 10px;*/
+}
+
+/*general aside*/
+.generalaside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 29.8828%;/* 306px/16px */
+    min-height: 770px;
+  &__section {
+    background-color: white;
+    border-radius: 5px;
+    border-top: 4px solid teal;
+    box-shadow: 0 0 1px 1px #c2c2c2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 230px;
+    padding: 20px 20px 30px;
+
+    & img{
+      border-radius: 45px;
+      margin-right: 20px;
+      width: 80px;
+    }
+
+    & time {
+      /*display: block;*/
+    }
+
+    & ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 440px;
+    & li{
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    }
+    }
+  }
+
+  &__title{
+    color: #606060;
+    /*margin-bottom: 10px;*/
+  }
+
+  & li {
+    /*display: inline-block;*/
+    /*margin-bottom: 15px;*/
+    /*width: 18em;*/
+  }
+
+&__link {
+    color: teal;
+    line-height: 1.5;
+  }
+}
+
+/*footer*/
+
+.footer {
+  background-color: #159588;
+  border-top: 4px solid teal;
+margin-top: 4em;
+ width: 100%;
+
+
+&__nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1024px;
+
+& img {
+      width: 60px;
+}
+/*    &:first-child {
+      font-size: 0;
+      /*margin-left: 5px;
+      /*margin-top: 5px;
+    }
+
+    &:last-child {
+      /*float: right;*/
+      /*margin-right: 0.5em;*/
+      /*margin-top: 20px;
+  }*/
+
+    & a:last-child {
+      background-color: teal;
+      box-shadow: 0 0 1px 0.1px black;
+      color: white;
+      padding: 10px;
+      text-decoration: none;
+      text-transform: uppercase;
+       }
+  }
+
+
+}
+
+/*eddbook*/
+
+.addbook{
+ /* display: block;*/
+
+  &_input {
+    /*width: 200px;*/
+  }
+}

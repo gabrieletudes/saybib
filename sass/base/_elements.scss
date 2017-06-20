@@ -1,0 +1,22 @@
+/*
+ * /sass/base/_elements.scss - Styles base elements
+ * by Gabriel
+ */
+
+html {
+    background: $backgroundColor;
+    font: normal 62.5%/1.25 $textFont;
+}
+
+body {
+    color: $textColor;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+    transition: color .25s ease-in-out;
+    &:hover {
+        color: $linkHoverColor;
+    }
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Say Yes - Book collection</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="main">
+    <nav class="nav">
+        <a href="#" class="nav__logo"><img src="img/logo.png" alt="logo du site"></a>
+        <ul>
+            <li class="nav__link">
+                <a href="">home</a>
+            </li>
+            <li class="nav__link">
+                <a href="">livres</a>
+            </li>
+            <li class="nav__link">
+                <a href="">auteurs</a>
+            </li>
+            <li class="nav__link">
+                <a href="">libreries</a>
+            </li>
+        </ul>
+    </nav>
+    <header class="mainheader">
+        <div class="mainheader__wrap">
+        <q class="mainheader__wrap__quote">I think of life as a good book. The
+            further you get into it, the more it begins to make
+            sense.
+        </q>
+        <p class="mainheader__wrap__authorname">Harold Kushner</p>
+        <a class="mainheader__wrap__link" href="#">clicke ici pour voir tout les livres</a>
+        </div>
+    </header>
+    <div class="wrapper">
+    <article class="article" >
+        <header class="article__header">
+            <time class="article__header__date" datetime="22-04-2016" pubdate="pubdate">22-04-2016</time>
+            <h1 class="article__header__title">CSS 3 flexbox : Plongez dans les CSS modernes</h1>
+            <p class="article__header__label">de <a class="article__header__link" href="#" >Raphaël Goetter</a></p>
+            <p class="article__header__label">Editeur: <a class="article__header__link" href="#" >Eyrolls</a></p>
+            <p class="article__header__label">ISBN: <a class="article__header__link" href="#" >978-2212143638</a></p>
+            <p class="article__header__label">Genre: <a class="article__header__link" href="#" >CSS</a></p>
+        </header>
+        <img class="article__bookcover" src="img/bookcover.jpg" alt="Couverture du livre">
+        <p class="article__content">Un ouvrage de référence pour les webdesigners et intégrateurs. "Flexible Box Layout Module", mieux connue sous le nom de "Flexbox", est une spécification CSS 3 du W3C qui définit un nouveau modèle de boîte et de positionnement jusqu'alors inédit. Il intègre une gestion naturelle de la fluidité des éléments et du Responsive, et rend caduc l'usage de grilles d'affichage complexes, voire de frameworks - véritables usines à gaz où l'on n'exploite qu'à peine 10 % de l'outil. Oubliez donc tout ce que vous aviez appris sur CSS et, comme moi, tombez amoureux de Flexbox !</p>
+        <a class="article__link" href="#">Lire la suite sur cette livre </a>
+    </article>
+        <article class="article" >
+        <form class="addbook" action="#" method="post">
+            <label class="addbook__label">
+                Titre du livre
+                <input class="addbook_input" type="text" name="titre" placeholder="ex Harry Potter">
+            </label>
+
+            <label class="addbook__label">
+                Auteur
+                <input class="" type="text" name="editeur" placeholder="ex Raphaël Goetter">
+            </label>
+
+            <label class="addbook__label">
+                ISBN
+                <input type="text" name="isbn" placeholder="ex 123-1234567899 ">
+            </label>
+
+            <label class="addbook__label">
+                Description du livre
+                <textarea name="comments"></textarea>
+            </label>
+
+            <input type="submit" name="publier" value="Modifier">
+
+        </form>
+        </article>
+
+    <aside class="generalaside">
+        <section class="generalaside__section">
+        <h2 class="generalaside__section__title">Genre</h2>
+        <ul>
+            <li>
+                <a href="#" class="generalaside__link">CSS</a>
+            </li>
+            <li>
+                <a href="#" class="generalaside__link">Html</a>
+            </li>
+            <li>
+                <a href="#" class="generalaside__link">PHP</a>
+            </li>
+            <li>
+                <a href="#" class="generalaside__link">Java Script</a>
+            </li>
+            <li>
+                <a href="#" class="generalaside__link">Swift</a>
+            </li>
+        </ul>
+        </section>
+        <section class="generalaside__section">
+        <h2 class="generalaside__section__title">Auteur</h2>
+        <ul>
+            <li>
+                <img src="img/authorphoto.jpeg" alt="foto de l'auteur Raphaël Goetter">
+                <a href="#" class="generalaside__link">Raphaël Goetter</a>
+            </li>
+            <li>
+                <img src="img/authorphoto.jpeg" alt="foto de l'auteur Raphaël Goetter">
+                <a href="#" class="generalaside__link">Raphaël Goetter</a>
+            </li>
+            <li>
+                <img src="img/authorphoto.jpeg" alt="foto de l'auteur Raphaël Goetter">
+                <a href="#" class="generalaside__link">Raphaël Goetter</a>
+            </li>
+            <li>
+                <img src="img/authorphoto.jpeg" alt="foto de l'auteur Raphaël Goetter">
+                <a href="#" class="generalaside__link">Raphaël Goetter</a>
+            </li>
+            <li>
+                <img src="img/authorphoto.jpeg" alt="foto de l'auteur Raphaël Goetter">
+                <a href="#" class="generalaside__link">Raphaël Goetter</a>
+            </li>
+        </ul>
+        </section>
+    </aside>
+    </div>
+    <footer class="footer">
+        <ul class="footer__nav">
+            <li><a href="#"><img src="img/logo.png" alt="">Logo</a></li>
+            <li><a href="#">retourner vers l'haut</a></li>
+        </ul>
+    </footer>
+</div>
+</body>
+</html>
